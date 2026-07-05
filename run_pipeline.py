@@ -89,7 +89,14 @@ def main():
         ylabel="Liberal democracy index",
         output_path=f"{output_dir}/liberal_democracy_trend.png",
     )
-
+    plot_trend(
+        panel,
+        indicator_id="POVERTY_HEADCOUNT",
+        title=f"{country} poverty headcount",
+        ylabel="Poverty headcount ratio",
+        output_path=f"{output_dir}/poverty_headcount_trend.png",
+    )
+    
     scenario_path = generate_scenario_card(
         panel=panel,
         country=country,
