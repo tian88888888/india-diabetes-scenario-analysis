@@ -1,0 +1,205 @@
+population_group_id,population_group_name,measure_id,measure_name,location_id,location_name,sex_id,sex_name,age_id,age_name,cause_id,cause_name,metric_id,metric_name,year,val,upper,lower
+1,All Population,1,Deaths,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,1990,26.559467179751454,37.872495150026076,19.00080839419853
+1,All Population,1,Deaths,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,1991,26.680583581457434,38.582209819235274,19.107472739553263
+1,All Population,1,Deaths,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,1992,26.796212239167513,38.75483127866925,19.274543016496374
+1,All Population,1,Deaths,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,1993,26.534771031947834,37.975802667687994,19.668353569965895
+1,All Population,1,Deaths,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,1994,26.665198629040326,37.80699219295134,19.615061973595438
+1,All Population,1,Deaths,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,1995,27.40177729742318,38.3516212236415,19.59420172087349
+1,All Population,1,Deaths,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,1996,27.849310505467372,38.881369659118825,20.12636513649133
+1,All Population,1,Deaths,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,1997,28.13966722460023,39.02648419618313,20.28812275080998
+1,All Population,1,Deaths,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,1998,28.171119595595023,39.0362174543191,20.62786936585461
+1,All Population,1,Deaths,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,1999,27.02047656975002,37.29642674370932,19.906904464578027
+1,All Population,1,Deaths,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2000,26.49505993119596,36.602069256147146,19.768338790866245
+1,All Population,1,Deaths,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2001,26.625839644143163,37.17553115399271,19.660202630927863
+1,All Population,1,Deaths,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2002,26.90369463116688,37.31334913127279,20.041100074389316
+1,All Population,1,Deaths,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2003,27.518442321283082,37.66671313507585,21.084746209219027
+1,All Population,1,Deaths,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2004,27.75924276870119,37.5365294635335,21.467551818778325
+1,All Population,1,Deaths,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2005,28.28906322615335,38.32724630878831,22.238874988371432
+1,All Population,1,Deaths,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2006,30.189591156217322,40.6829350773333,24.16859230459306
+1,All Population,1,Deaths,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2007,32.12262417728798,42.41580911158335,25.70219804625993
+1,All Population,1,Deaths,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2008,33.070346800789395,42.73372536548806,26.619479346494185
+1,All Population,1,Deaths,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2009,33.38601911390411,42.473944732389654,26.506170779486077
+1,All Population,1,Deaths,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2010,34.077983321468096,42.36630719983952,27.17337648833166
+1,All Population,1,Deaths,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2011,34.64835894808182,42.151037043991515,27.693037322575663
+1,All Population,1,Deaths,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2012,35.373700578298404,43.072167825723476,28.800039736894277
+1,All Population,1,Deaths,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2013,37.90881792193796,46.22689723766281,30.929605533063977
+1,All Population,1,Deaths,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2014,39.99090645798521,48.18884431984998,32.77666709184238
+1,All Population,1,Deaths,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2015,41.35602542147998,49.6185487200818,34.01317825948462
+1,All Population,1,Deaths,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2016,42.03378363014019,50.153103365909544,34.95860726336189
+1,All Population,1,Deaths,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2017,43.59238149003433,51.06383921952005,36.41290066857298
+1,All Population,1,Deaths,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2018,44.839030947715536,52.53328348485064,37.296617532385525
+1,All Population,1,Deaths,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2019,47.13681179586815,55.97627577005372,38.682303236588695
+1,All Population,1,Deaths,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2020,49.00201999264434,58.03544210794464,39.87110516521827
+1,All Population,1,Deaths,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2021,51.7353334853566,62.21156997009299,40.87184154515266
+1,All Population,1,Deaths,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2022,54.62469429219988,66.00239980067238,42.23193970042454
+1,All Population,1,Deaths,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2023,52.64329858305354,66.52300183687376,39.26111767609784
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,1991,960.7698707949177,1217.4822471299108,739.1299209283694
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,1990,949.4059830962728,1201.6898077786975,728.3102883051522
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,1992,971.1640719809462,1231.829705584352,753.4999301210926
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,1993,973.6497434446451,1220.7649002284154,754.7979243147176
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,1994,980.4842198485967,1228.5367605458985,762.1564680955192
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,1995,994.2568115359604,1246.9578103746323,767.7984732080731
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,1996,1008.2446605803419,1265.2708531332082,780.0224413946106
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,1999,1035.9343837058059,1292.4173137526057,793.640868151709
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,1997,1028.3340912256888,1288.1374515285363,803.0905251247747
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,1998,1044.351545281439,1303.731136523084,804.2155718447684
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2000,1031.960843604122,1283.9893817192612,800.2443881024893
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2002,1033.5159557616205,1271.6789270612924,812.9833396258404
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2001,1032.7782284196626,1278.6370737807997,814.2946232035101
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2003,1038.908057509684,1277.1416020630104,823.4585279213742
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2004,1036.0542013065428,1270.1858662520633,818.6186760535448
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2005,1043.8744284224704,1282.5147486950498,837.1113768670538
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2006,1083.922844538393,1326.407186254895,869.0314672941699
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2007,1129.5908944872983,1377.2442495200733,925.0354561125694
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2008,1162.025029428333,1404.9195894704915,953.6015839049167
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2009,1189.9167179702501,1424.5159720662464,970.7188193257631
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2010,1223.313462312291,1471.1956084670444,1005.9879847344133
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2011,1254.929197924093,1492.178536852624,1033.2590863050627
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2012,1289.454025470375,1518.8002484069425,1057.4004891256689
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2013,1348.8637841625361,1593.4573897893533,1101.9913418255173
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2014,1398.6090794782842,1645.5557527225756,1140.9477173483058
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2015,1442.5265020558354,1692.4913230498744,1181.4864600878268
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2016,1470.2574405166768,1711.1141701990534,1219.4327726315498
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2017,1513.532959385887,1743.677749377502,1263.2944336246474
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2018,1549.5849510302337,1782.9281119445873,1275.9113607678964
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2019,1599.3442294749732,1868.8889324615807,1315.7102998754235
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2020,1643.8891446411158,1929.3132280983832,1350.7576204673378
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2021,1744.9727839931998,2056.5893025435903,1431.1325941638293
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2022,1744.6937889937224,2060.693311766379,1402.2531822760577
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2023,1710.8333695165074,2029.8773453979625,1367.1765184467283
+1,All Population,3,YLDs (Years Lived with Disability),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,1990,345.62809916416,473.15601637944997,245.84295317815003
+1,All Population,3,YLDs (Years Lived with Disability),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,1991,354.92809284371,483.82881698185,253.78805425239997
+1,All Population,3,YLDs (Years Lived with Disability),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,1992,364.41294200287,494.79770530055004,260.14146665265
+1,All Population,3,YLDs (Years Lived with Disability),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,1993,372.85634133275,505.20036729355,265.58072874873
+1,All Population,3,YLDs (Years Lived with Disability),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,1994,379.05493969541,512.61992428047,270.24491111859
+1,All Population,3,YLDs (Years Lived with Disability),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,1995,382.13150765364,518.50640732803,272.49838880805
+1,All Population,3,YLDs (Years Lived with Disability),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,1996,387.09586870545,524.13182581693,275.72959220646
+1,All Population,3,YLDs (Years Lived with Disability),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,1997,397.41090298209,536.09658597369,282.58016347169
+1,All Population,3,YLDs (Years Lived with Disability),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,1998,409.81040632998,553.22935425963,290.35364328427
+1,All Population,3,YLDs (Years Lived with Disability),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,1999,420.76054350086997,570.65753718403,297.06806407784
+1,All Population,3,YLDs (Years Lived with Disability),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2000,426.61039701663,577.91015040198,300.24400601826
+1,All Population,3,YLDs (Years Lived with Disability),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2001,427.37469853768005,580.1615217401101,300.8014448142
+1,All Population,3,YLDs (Years Lived with Disability),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2002,426.51311023744995,580.08145110095,300.24180199522
+1,All Population,3,YLDs (Years Lived with Disability),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2003,425.25991882503996,578.89671552637,299.13219031236997
+1,All Population,3,YLDs (Years Lived with Disability),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2004,425.1304065309,579.20883156328,299.56128477326
+1,All Population,3,YLDs (Years Lived with Disability),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2005,427.27312446809,582.42160994118,300.7312040204
+1,All Population,3,YLDs (Years Lived with Disability),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2006,433.1530997238,591.25796623762,304.55401353494
+1,All Population,3,YLDs (Years Lived with Disability),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2007,442.62985333216994,603.5440270901099,311.90065603011
+1,All Population,3,YLDs (Years Lived with Disability),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2008,454.50110338332,620.01120485507,320.85290452327
+1,All Population,3,YLDs (Years Lived with Disability),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2009,467.93394693662,638.51242189889,330.97573519949
+1,All Population,3,YLDs (Years Lived with Disability),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2010,481.83267295638007,657.23152394843,341.00256861286
+1,All Population,3,YLDs (Years Lived with Disability),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2011,501.14498134566,681.07297467679,355.57344694257
+1,All Population,3,YLDs (Years Lived with Disability),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2012,527.88249790406,714.37876511535,374.42057982705995
+1,All Population,3,YLDs (Years Lived with Disability),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2013,555.99164806078,750.045975495,394.1195007059
+1,All Population,3,YLDs (Years Lived with Disability),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2014,579.60715944366,779.2225890821301,410.27647431844
+1,All Population,3,YLDs (Years Lived with Disability),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2015,592.81298102252,794.7533931911299,418.44370704723997
+1,All Population,3,YLDs (Years Lived with Disability),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2016,598.64645414787,804.4271212382799,424.71356577857
+1,All Population,3,YLDs (Years Lived with Disability),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2017,604.04906744602,814.2160209962,429.93331226945
+1,All Population,3,YLDs (Years Lived with Disability),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2018,608.54801267943,822.53870135641,434.49123182458
+1,All Population,3,YLDs (Years Lived with Disability),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2019,611.53740877894,828.94923829096,437.35985011597
+1,All Population,3,YLDs (Years Lived with Disability),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2020,611.30575445953,829.58795536489,438.5852412176
+1,All Population,3,YLDs (Years Lived with Disability),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2021,605.20075323427,824.0827712162301,434.36809017861
+1,All Population,3,YLDs (Years Lived with Disability),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2022,600.72730573135,820.0912139406901,430.22726274316994
+1,All Population,3,YLDs (Years Lived with Disability),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2023,608.80363060181,829.7921752838,437.38677264114
+1,All Population,4,YLLs (Years of Life Lost),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,1990,603.7778929184333,848.0207258277266,438.7457268981737
+1,All Population,4,YLLs (Years of Life Lost),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,1991,605.8417871793348,866.2936229574791,440.6817680778276
+1,All Population,4,YLLs (Years of Life Lost),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,1992,606.7511394528044,866.3423249234486,442.6870162859159
+1,All Population,4,YLLs (Years of Life Lost),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,1993,600.7934118061539,854.2769056790564,450.3847299292509
+1,All Population,4,YLLs (Years of Life Lost),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,1994,601.4292900086098,847.7479816854632,445.5666627063426
+1,All Population,4,YLLs (Years of Life Lost),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,1995,612.1253138177359,863.180504250371,444.98257109287334
+1,All Population,4,YLLs (Years of Life Lost),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,1996,621.1488019393807,860.6923184128025,453.29293889998615
+1,All Population,4,YLLs (Years of Life Lost),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,1997,630.9231985762763,866.6271512012434,458.6505012136039
+1,All Population,4,YLLs (Years of Life Lost),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,1998,634.5411496065219,877.5038012453497,466.61338562722045
+1,All Population,4,YLLs (Years of Life Lost),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,1999,615.1738511447061,843.1133556592785,455.2436571973205
+1,All Population,4,YLLs (Years of Life Lost),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2000,605.3504576793605,824.0053908771113,451.1654081789467
+1,All Population,4,YLLs (Years of Life Lost),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2001,605.4035409937152,835.285477117678,451.09163859709076
+1,All Population,4,YLLs (Years of Life Lost),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2002,607.0028566135081,831.3156430522713,456.3883615966133
+1,All Population,4,YLLs (Years of Life Lost),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2003,613.6481497413928,830.2890700922521,472.2051362146068
+1,All Population,4,YLLs (Years of Life Lost),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2004,610.9238058290247,819.9730928032914,474.64710959883945
+1,All Population,4,YLLs (Years of Life Lost),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2005,616.6013150634797,834.9312039216975,486.09142736767114
+1,All Population,4,YLLs (Years of Life Lost),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2006,650.7697560765671,870.1565875936348,522.3271574388447
+1,All Population,4,YLLs (Years of Life Lost),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2007,686.9610526634972,904.301483630067,552.1724921319374
+1,All Population,4,YLLs (Years of Life Lost),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2008,707.5239378620311,919.9926539875833,569.4572384404655
+1,All Population,4,YLLs (Years of Life Lost),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2009,721.9827831999045,916.2937802940264,581.1563591486538
+1,All Population,4,YLLs (Years of Life Lost),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2010,741.480801883558,925.3907589358296,591.7065363024849
+1,All Population,4,YLLs (Years of Life Lost),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2011,753.7842296082003,918.8924640416518,605.6595727562706
+1,All Population,4,YLLs (Years of Life Lost),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2012,761.5715412912525,921.4242799064966,618.6951996863972
+1,All Population,4,YLLs (Years of Life Lost),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2013,792.8721505575344,961.281340132825,646.3660929957158
+1,All Population,4,YLLs (Years of Life Lost),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2014,819.0019351044006,983.3222223097459,674.4228976028954
+1,All Population,4,YLLs (Years of Life Lost),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2015,849.7135364464538,1022.5005406388823,706.2466306350645
+1,All Population,4,YLLs (Years of Life Lost),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2016,871.6110019336091,1040.7619344896812,722.2339723754453
+1,All Population,4,YLLs (Years of Life Lost),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2017,909.4839076451328,1058.9410328316528,758.6213211416117
+1,All Population,4,YLLs (Years of Life Lost),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2018,941.0369541730486,1104.06727703943,787.6989606597289
+1,All Population,4,YLLs (Years of Life Lost),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2019,987.8068365959994,1166.157955612349,819.2829277274285
+1,All Population,4,YLLs (Years of Life Lost),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2020,1032.583406075532,1204.923842786347,845.423536770841
+1,All Population,4,YLLs (Years of Life Lost),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2021,1139.7720464941435,1365.1736700733927,914.8264129877241
+1,All Population,4,YLLs (Years of Life Lost),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2022,1143.9664988812794,1379.5665819969322,903.895054457216
+1,All Population,4,YLLs (Years of Life Lost),163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2023,1102.0297547435837,1376.2455964733797,842.8344633914302
+1,All Population,5,Prevalence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,1990,4429.81604876991,4859.09289986798,3995.81232002035
+1,All Population,5,Prevalence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,1991,4428.28973039217,4852.85706109512,3992.2667793526603
+1,All Population,5,Prevalence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,1992,4458.347036752551,4884.29328170007,4015.94218115275
+1,All Population,5,Prevalence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,1993,4503.289643534969,4930.62532670417,4051.04437272905
+1,All Population,5,Prevalence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,1994,4546.53560571093,4979.310955724521,4092.22369893764
+1,All Population,5,Prevalence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,1995,4571.54848018535,5012.06255696268,4116.77466394353
+1,All Population,5,Prevalence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,1996,4669.5649714395995,5119.36908300969,4211.093172351029
+1,All Population,5,Prevalence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,1997,4892.47868277076,5360.90210413944,4423.486072058779
+1,All Population,5,Prevalence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,1998,5164.40524445948,5656.08476545782,4681.62798357612
+1,All Population,5,Prevalence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,1999,5408.81741707942,5916.13324263322,4914.2663492531
+1,All Population,5,Prevalence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2000,5548.5678232008,6068.09265485753,5043.366795862849
+1,All Population,5,Prevalence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2001,5596.0454137339,6114.00166155533,5097.31564610576
+1,All Population,5,Prevalence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2002,5623.49290604389,6137.44769259583,5132.64496148886
+1,All Population,5,Prevalence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2003,5642.834565252399,6143.54544545578,5157.9589719758
+1,All Population,5,Prevalence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2005,5704.88231997948,6203.23151952365,5217.92075862745
+1,All Population,5,Prevalence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2004,5666.03255103914,6160.22530955654,5181.853757262829
+1,All Population,5,Prevalence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2006,5772.2036884955505,6272.814016901079,5280.28872954941
+1,All Population,5,Prevalence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2007,5867.6353332311,6374.912696681439,5366.72027329075
+1,All Population,5,Prevalence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2008,5983.10656700979,6503.507939972281,5468.63068211236
+1,All Population,5,Prevalence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2009,6110.57835928097,6646.49723733903,5575.61061269208
+1,All Population,5,Prevalence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2010,6241.9253443937405,6789.000663653,5692.517980354281
+1,All Population,5,Prevalence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2011,6418.807298970861,6980.19085229552,5871.688549243069
+1,All Population,5,Prevalence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2012,6656.256678419941,7238.60151891431,6112.70310509161
+1,All Population,5,Prevalence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2013,6906.83666358787,7510.6673019501395,6342.39523028636
+1,All Population,5,Prevalence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2014,7123.1775110277795,7751.655420980851,6538.73147661358
+1,All Population,5,Prevalence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2015,7258.026240136071,7893.29731312262,6655.3039914807005
+1,All Population,5,Prevalence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2016,7356.7600970372505,8001.75237432114,6757.45996051775
+1,All Population,5,Prevalence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2017,7479.46116243083,8141.07945966759,6867.33991287828
+1,All Population,5,Prevalence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2018,7601.349835858261,8283.14046419288,6964.831463058201
+1,All Population,5,Prevalence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2019,7697.58337888308,8388.57373764718,7041.39138737116
+1,All Population,5,Prevalence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2020,7742.82700756053,8432.49961559025,7081.6323629998
+1,All Population,5,Prevalence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2022,7593.56022568915,8266.29937488448,6894.5421378459
+1,All Population,5,Prevalence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2021,7666.000944753209,8339.50984823212,6993.326567393459
+1,All Population,5,Prevalence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2023,7693.918516026551,8413.949615734411,6968.15865025608
+1,All Population,6,Incidence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,1991,202.8890334647,221.70958448886998,182.24920196012
+1,All Population,6,Incidence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,1990,202.43191686944002,221.76962154585,181.56931136397
+1,All Population,6,Incidence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,1992,203.66353378949003,222.12092655541,183.15526269878
+1,All Population,6,Incidence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,1993,204.70250394721998,223.22095033982998,184.32311603837002
+1,All Population,6,Incidence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,1994,205.95295590724,224.65185988526002,185.67448537523
+1,All Population,6,Incidence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,1995,207.36125787970002,226.41004574373997,187.16087208167
+1,All Population,6,Incidence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,1996,211.94842263773998,230.82999636008998,192.07855846961002
+1,All Population,6,Incidence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,1997,220.93250758929,239.90829637586998,200.9026082226
+1,All Population,6,Incidence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,1998,231.53446888173997,250.99413652706002,211.10739579236
+1,All Population,6,Incidence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,1999,240.95109156783,261.24174208129,220.1772063121
+1,All Population,6,Incidence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2000,246.36010445812,267.26024454928,225.50730947610998
+1,All Population,6,Incidence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2001,248.56962244310003,269.62145446603,227.62443072181998
+1,All Population,6,Incidence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2002,250.46466142662,271.33590650482,229.44984796986998
+1,All Population,6,Incidence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2003,252.32612426076,273.03328256973,231.17533454686
+1,All Population,6,Incidence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2004,254.43371456536002,275.0954998481,233.16933407678
+1,All Population,6,Incidence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2005,257.06397856601,277.72977970853,235.59304127147
+1,All Population,6,Incidence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2006,260.53564596573,281.45854657451,238.90637092485
+1,All Population,6,Incidence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2007,264.88006124656,286.14204690037,242.92983542126
+1,All Population,6,Incidence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2008,269.9482362735,291.73938602803,247.54692916446
+1,All Population,6,Incidence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2009,275.59242807645,297.94310209238,252.70820766849002
+1,All Population,6,Incidence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2010,281.66312864226,304.61071263229,258.27538966264
+1,All Population,6,Incidence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2011,289.82343477911,313.21734497651,266.20783342488
+1,All Population,6,Incidence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2012,300.62670071911003,324.82658567139003,276.60801931209
+1,All Population,6,Incidence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2013,312.27746169042996,337.57300812162,287.53624037487003
+1,All Population,6,Incidence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2014,322.97804386369995,349.25234327361,297.56047712363
+1,All Population,6,Incidence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2015,330.93339290388997,357.37570236205,304.82009357682
+1,All Population,6,Incidence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2016,336.76265355967996,364.1249233039,310.13832019721
+1,All Population,6,Incidence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2017,342.19557827716,370.56356945536,314.98295679694996
+1,All Population,6,Incidence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2018,347.10802072836003,376.14770545229004,319.33853442647
+1,All Population,6,Incidence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2019,351.37265600762,380.60402005059,323.16587345205
+1,All Population,6,Incidence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2020,354.85923764088,384.09939714948,326.16504910577004
+1,All Population,6,Incidence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2021,355.13983162845,384.41636525258997,325.19618701089996
+1,All Population,6,Incidence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2022,354.32480298896,383.23917653657,323.26836846893
+1,All Population,6,Incidence,163,India,3,Both,27,Age-standardized,587,Diabetes mellitus,3,Rate,2023,356.86485520824,384.97305798844,326.21013362236

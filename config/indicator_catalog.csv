@@ -1,0 +1,12 @@
+indicator_id,indicator_name,domain,source,direction,unit
+DALYS_RATE,DALYs rate,Disease burden,IHME GBD,lower_better,rate
+DEATHS_RATE,Deaths rate,Disease burden,IHME GBD,lower_better,rate
+PREVALENCE_RATE,Prevalence rate,Disease burden,IHME GBD,lower_better,rate
+GDP_PC,GDP per capita,Economic capability,World Bank,higher_better,current USD
+HEALTH_EXP_GDP,Health expenditure % GDP,Health system freedom,World Bank,higher_better,percent
+OOP_HEALTH_EXP,Out-of-pocket health expenditure,Health system freedom,World Bank,lower_better,percent
+SECONDARY_ENROL,Secondary school enrolment,Individual capability,World Bank,higher_better,percent
+URBAN_POP,Urban population,Lifestyle transition,World Bank,context,percent
+INTERNET_USERS,Internet users,Individual capability,World Bank,higher_better,percent
+POP_65PLUS,Population aged 65+,Demographic transition,World Bank,context,percent
+LIBDEM,Liberal democracy index,Governance and civic capacity,V-Dem,higher_better,index

@@ -1,0 +1,12 @@
+condition_id,indicator_id,role,priority
+Diabetes,DALYS_RATE,outcome,high
+Diabetes,DEATHS_RATE,outcome,high
+Diabetes,PREVALENCE_RATE,outcome,high
+Diabetes,POP_65PLUS,risk_driver,high
+Diabetes,URBAN_POP,risk_driver,high
+Diabetes,OOP_HEALTH_EXP,barrier,high
+Diabetes,HEALTH_EXP_GDP,protective_capacity,high
+Diabetes,SECONDARY_ENROL,protective_capacity,medium
+Diabetes,INTERNET_USERS,protective_capacity,medium
+Diabetes,GDP_PC,system_capacity,medium
+Diabetes,LIBDEM,institutional_context,medium

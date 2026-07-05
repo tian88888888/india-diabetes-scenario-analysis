@@ -1,0 +1,13 @@
+domain,indicator,source,data_type,brief_relevance
+Disease burden,Diabetes DALYs rate,IHME GBD,outcome,Overall diabetes-related health loss
+Disease burden,Diabetes deaths rate,IHME GBD,outcome,Mortality burden and severity
+Disease burden,Diabetes prevalence rate,IHME GBD,outcome,Scale of diabetes in the population
+Demographic transition,Population aged 65+ (%),World Bank,risk determinant,Ageing increases chronic disease demand
+Lifestyle transition,Urban population (%),World Bank,risk determinant,"Urbanisation can shift diet, physical activity, and care access"
+Individual capability,Secondary school enrolment,World Bank,protective determinant,Education supports health literacy and prevention capability
+Individual capability,Internet users (%),World Bank,protective determinant,Digital access supports health information and service access
+Economic capability,GDP per capita,World Bank,capacity determinant,Indicates national resource capacity
+Health system freedom,Current health expenditure (% GDP),World Bank / WHO,system capacity,Indicates national investment in health
+Health system freedom,Out-of-pocket expenditure (% health expenditure),World Bank / WHO,barrier determinant,Indicates financial barriers to care
+Governance and civic capacity,Liberal democracy index,V-Dem / OWID,institutional determinant,"Proxy for civic freedom, accountability, and institutional openness"
+Governance and civic capacity,Government effectiveness,World Bank WGI,institutional determinant,Proxy for implementation capacity
