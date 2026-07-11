@@ -3,7 +3,14 @@ import argparse
 from src.build_panel import build_panel
 from src.visualise import plot_trend
 from src.scenario import generate_scenario_card
+from pathlib import Path
 
+from src.analysis import build_indicator_summary, build_domain_summary
+from src.foresight_scenarios import (
+    build_forecast_scenario_summary,
+    build_scenario_comparison,
+    build_improvement_levers,
+)
 
 def parse_args():
     parser = argparse.ArgumentParser(
@@ -31,7 +38,33 @@ def main():
     country = args.country
     condition = args.condition
 
-    panel = build_panel(country, condition)
+    panel, foresight = build_panel(country, condition)
+
+    output_base = Path(f"outputs/{country}/{condition}")
+
+    indicator_summary = build_indicator_summary(panel)
+    indicator_summary.to_csv(output_base / "indicator_summary.csv", index=False)
+
+    domain_summary = build_domain_summary(indicator_summary)
+    domain_summary.to_csv(output_base / "domain_summary.csv", index=False)
+    
+    forecast_summary = build_forecast_scenario_summary(
+        foresight=foresight,
+        country=country,
+        condition=condition,
+    )
+
+    scenario_comparison = build_scenario_comparison(
+        forecast_summary=forecast_summary,
+        country=country,
+        condition=condition,
+    )
+
+    improvement_levers = build_improvement_levers(
+        scenario_comparison=scenario_comparison,
+        country=country,
+        condition=condition,
+    )
 
     output_dir = f"outputs/{country}/{condition}/figures"
 
@@ -96,9 +129,14 @@ def main():
         ylabel="Poverty headcount ratio",
         output_path=f"{output_dir}/poverty_headcount_trend.png",
     )
-    
+
     scenario_path = generate_scenario_card(
         panel=panel,
+        indicator_summary=indicator_summary,
+        domain_summary=domain_summary,
+        forecast_summary=forecast_summary,
+        scenario_comparison=scenario_comparison,
+        improvement_levers=improvement_levers,
         country=country,
         condition=condition,
     )

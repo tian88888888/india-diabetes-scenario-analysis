@@ -1,121 +1,247 @@
 from pathlib import Path
+import pandas as pd
 
 
-def calculate_change(panel, indicator_id):
-    clean = panel[["year", indicator_id]].dropna().sort_values("year")
-
-    if len(clean) < 2:
-        return None
-
-    start_year = int(clean.iloc[0]["year"])
-    end_year = int(clean.iloc[-1]["year"])
-    start_value = clean.iloc[0][indicator_id]
-    end_value = clean.iloc[-1][indicator_id]
-
-    absolute_change = end_value - start_value
-    percent_change = (absolute_change / start_value) * 100 if start_value != 0 else None
-
-    return {
-        "start_year": start_year,
-        "end_year": end_year,
-        "start_value": start_value,
-        "end_value": end_value,
-        "absolute_change": absolute_change,
-        "percent_change": percent_change,
-    }
+def format_value(value):
+    if pd.isna(value):
+        return "NA"
+    return f"{value:.2f}"
 
 
-def format_change(change):
-    if change is None:
-        return "Not enough data available."
+def format_percent(value):
+    if pd.isna(value):
+        return "NA"
+    return f"{value:.1f}%"
 
-    pct = change["percent_change"]
 
-    if pct is None:
-        pct_text = "percentage change unavailable"
-    else:
-        pct_text = f"{pct:.1f}%"
+def format_indicator_row(row):
+    if pd.isna(row["start_year"]) or pd.isna(row["end_year"]):
+        return f"- **{row['label']}**: insufficient data."
 
     return (
-        f"{change['start_year']} to {change['end_year']}: "
-        f"{change['start_value']:.2f} → {change['end_value']:.2f} "
-        f"({pct_text})"
+        f"- **{row['label']}**: "
+        f"{format_value(row['start_value'])} in {int(row['start_year'])} → "
+        f"{format_value(row['end_value'])} in {int(row['end_year'])} "
+        f"({format_percent(row['percent_change'])}); "
+        f"interpretation: `{row['interpretation']}`"
     )
 
 
-def generate_scenario_card(panel, country, condition):
-    dalys_change = calculate_change(panel, "DALYS_RATE")
-    ageing_change = calculate_change(panel, "POP_65PLUS")
-    urban_change = calculate_change(panel, "URBAN_POP")
-    oop_change = calculate_change(panel, "OOP_HEALTH_EXP")
-    health_exp_change = calculate_change(panel, "HEALTH_EXP_GDP")
-    internet_change = calculate_change(panel, "INTERNET_USERS")
+def get_domain_text(indicator_summary, domain):
+    domain_df = indicator_summary[
+        (indicator_summary["domain"] == domain)
+        & (indicator_summary["interpretation"] != "insufficient_data")
+    ]
+
+    if domain_df.empty:
+        return "- Not enough data available."
+
+    return "\n".join(
+        format_indicator_row(row)
+        for _, row in domain_df.iterrows()
+    )
+
+
+def format_forecast_summary(forecast_summary):
+    if forecast_summary is None or forecast_summary.empty:
+        return "- No IHME Foresight scenario summary available."
+
+    lines = []
+
+    for _, row in forecast_summary.iterrows():
+        lines.append(
+            f"- **{row['scenario']}**: "
+            f"2025 DALYs rate = {format_value(row['dalys_rate_2025'])}; "
+            f"2050 DALYs rate = {format_value(row['dalys_rate_2050'])}; "
+            f"2025–2050 change = {format_percent(row['dalys_percent_change_2025_2050'])}"
+        )
+
+    return "\n".join(lines)
+
+
+def format_scenario_comparison(scenario_comparison):
+    if scenario_comparison is None or scenario_comparison.empty:
+        return "- No scenario comparison available."
+
+    lines = []
+
+    for _, row in scenario_comparison.iterrows():
+        scenario = row["scenario"]
+
+        lines.append(
+            f"- **{scenario}**: "
+            f"2050 DALYs rate = {format_value(row['dalys_rate_2050'])}; "
+            f"reduction vs Reference = "
+            f"{format_value(row['absolute_reduction_vs_reference_2050'])} "
+            f"({format_percent(row['percent_reduction_vs_reference_2050'])}); "
+            f"lever: **{row['lever']}**"
+        )
+
+    return "\n".join(lines)
+
+
+def format_improvement_levers(improvement_levers):
+    if improvement_levers is None or improvement_levers.empty:
+        return "- No improvement levers available."
+
+    lines = []
+
+    for _, row in improvement_levers.iterrows():
+        lines.append(
+            f"{int(row['priority_rank'])}. **{row['lever']}** "
+            f"({row['scenario']}): "
+            f"{row['improvement_idea']} "
+            f"Estimated 2050 DALYs-rate reduction vs Reference: "
+            f"{format_value(row['estimated_reduction_vs_reference_2050'])} "
+            f"({format_percent(row['estimated_percent_reduction_vs_reference_2050'])})."
+        )
+
+    return "\n".join(lines)
+
+
+def get_top_improvement_sentence(improvement_levers):
+    if improvement_levers is None or improvement_levers.empty:
+        return (
+            "No improvement pathway could be prioritised from the available "
+            "Foresight scenario data."
+        )
+
+    top = improvement_levers.iloc[0]
+
+    return (
+        f"The strongest estimated improvement pathway is **{top['lever']}** "
+        f"under the **{top['scenario']}** scenario, with an estimated 2050 "
+        f"DALYs-rate reduction of {format_value(top['estimated_reduction_vs_reference_2050'])} "
+        f"against the Reference scenario."
+    )
+
+
+def generate_scenario_card(
+    panel,
+    indicator_summary,
+    domain_summary,
+    forecast_summary,
+    scenario_comparison,
+    improvement_levers,
+    country,
+    condition,
+):
+    disease_burden = get_domain_text(indicator_summary, "Disease burden")
+    risk_pressure = get_domain_text(indicator_summary, "Risk pressure")
+    economic_capability = get_domain_text(indicator_summary, "Economic capability")
+    economic_constraint = get_domain_text(indicator_summary, "Economic constraint")
+    health_capacity = get_domain_text(indicator_summary, "Health system capacity")
+    health_barrier = get_domain_text(indicator_summary, "Health system barrier")
+    individual_capability = get_domain_text(indicator_summary, "Individual capability")
+    governance_context = get_domain_text(indicator_summary, "Governance context")
+
+    forecast_text = format_forecast_summary(forecast_summary)
+    comparison_text = format_scenario_comparison(scenario_comparison)
+    lever_text = format_improvement_levers(improvement_levers)
+    top_improvement_sentence = get_top_improvement_sentence(improvement_levers)
 
     text = f"""# {country} — {condition} Scenario Card
 
-## 1. Disease burden signal
+## 1. Purpose
 
-**Diabetes DALYs rate**
+This scenario card summarises historical disease burden, IHME Foresight scenario projections, and country-level determinants for **{country} + {condition}**.
 
-{format_change(dalys_change)}
+The goal is not to prove causality. The goal is to support forecasting scenario thinking for prevention, health-system readiness, and investment prioritisation.
 
-This shows the long-term burden signal for diabetes. DALYs are used as the main burden measure because they combine premature mortality and non-fatal health loss.
+---
 
-## 2. Risk drivers
+## 2. Historical disease burden signal
 
-### Population ageing
+{disease_burden}
 
-{format_change(ageing_change)}
+---
 
-Ageing is a key risk driver because diabetes and its complications become more common as populations get older.
+## 3. IHME Foresight scenario summary
 
-### Urbanisation
+{forecast_text}
 
-{format_change(urban_change)}
+---
 
-Urbanisation is treated as a lifestyle-transition signal. It may reflect changes in diet, physical activity, work patterns, and service access.
+## 4. Scenario comparison against Reference
 
-## 3. Health system and financial protection
+{comparison_text}
 
-### Out-of-pocket health expenditure
+---
 
-{format_change(oop_change)}
+## 5. Priority improvement levers
 
-Out-of-pocket expenditure is interpreted as a financial barrier to care. A lower value generally suggests improved financial protection.
+{lever_text}
 
-### Health expenditure as % of GDP
+---
 
-{format_change(health_exp_change)}
+## 6. Main scenario implication
 
-Health expenditure is interpreted as a system-capacity signal. Higher investment may improve prevention, screening, treatment, and long-term management.
+{top_improvement_sentence}
 
-## 4. Individual capability
+This means the scenario analysis should focus less on whether burden is rising in general, and more on which improvement pathway produces the largest projected reduction compared with the Reference trajectory.
 
-### Internet access
+---
 
-{format_change(internet_change)}
+## 7. Country determinant context
 
-Internet access is used as a proxy for information access and digital capability, which may support health literacy, telehealth, and prevention outreach.
+### Risk pressure
 
-## 5. Brief-facing interpretation
+{risk_pressure}
 
-This scenario card does not claim that freedom-pattern indicators directly cause diabetes burden. Instead, it uses them as contextual determinants for scenario thinking.
+### Economic capability
 
-For {country}, the core scenario question is:
+{economic_capability}
 
-> Is prevention and health-system capacity improving quickly enough to offset demographic and lifestyle-transition pressures?
+### Economic constraint
 
-## 6. Early scenario hypothesis
+{economic_constraint}
 
-If diabetes burden continues to rise while ageing and urbanisation also increase, {country} may face a chronic-disease transition scenario where prevention, early screening, affordability, and primary-care access become increasingly important.
+### Health system capacity
 
-## 7. Suggested prevention investment angles
+{health_capacity}
 
-- Earlier diabetes screening and risk identification
-- Primary-care based chronic disease management
-- Health literacy and digital outreach
-- Financial protection for long-term treatment
-- Urban lifestyle and prevention interventions
+### Health system barriers
+
+{health_barrier}
+
+### Individual capability
+
+{individual_capability}
+
+### Governance and civic context
+
+{governance_context}
+
+---
+
+## 8. Brief-facing interpretation
+
+This scenario card combines three types of evidence:
+
+1. **Historical GBD burden**  
+   Shows how the condition has changed over time.
+
+2. **IHME Foresight scenarios**  
+   Compares future disease burden under Reference and improvement scenarios.
+
+3. **Country determinants**  
+   Provides context for whether improvement pathways may be feasible or where investment might be needed.
+
+The key brief-facing question is:
+
+> Which improvement pathway appears most promising under IHME Foresight, and what country-level determinants may support or constrain that pathway?
+
+---
+
+## 9. Suggested use in team scenario work
+
+Use this output to support country scenario discussion:
+
+- Treat **Reference** as the baseline future trajectory.
+- Compare improvement scenarios against Reference.
+- Use the largest projected reduction to identify priority intervention levers.
+- Use country determinants to explain feasibility, constraints, and investment needs.
+- Avoid claiming direct causality between determinants and disease burden.
 """
 
     output_dir = Path(f"outputs/{country}/{condition}")

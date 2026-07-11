@@ -23,7 +23,7 @@ def fetch_worldbank_indicator(country: str, indicator_id: str, wb_code: str) -> 
         "per_page": 20000,
     }
 
-    response = requests.get(url, params=params)
+    response = requests.get(url, params=params, timeout=30)
     response.raise_for_status()
 
     json_data = response.json()
@@ -39,21 +39,36 @@ def fetch_worldbank_indicator(country: str, indicator_id: str, wb_code: str) -> 
             indicator_id: item["value"],
         })
 
-    df = pd.DataFrame(rows)
-    return df
+    return pd.DataFrame(rows)
 
 
-def fetch_worldbank_determinants(country: str) -> pd.DataFrame:
+def fetch_worldbank_determinants(country: str, force_refresh: bool = False) -> pd.DataFrame:
     """
     Fetch World Bank determinant indicators for one country.
+
+    Uses local cached processed file by default if available.
 
     Output:
         data/processed/{country}_worldbank_determinants.csv
     """
+    output_path = Path(f"data/processed/{country.lower()}_worldbank_determinants.csv")
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+
+    if output_path.exists() and not force_refresh:
+        print(f"Using cached World Bank determinants: {output_path}")
+        return pd.read_csv(output_path)
+
     dfs = []
 
     for indicator_id, wb_code in WORLD_BANK_INDICATORS.items():
-        df = fetch_worldbank_indicator(country, indicator_id, wb_code)
+        print(f"Fetching World Bank indicator: {indicator_id} ({wb_code})")
+
+        try:
+            df = fetch_worldbank_indicator(country, indicator_id, wb_code)
+        except requests.RequestException as error:
+            print(f"Warning: failed to fetch {indicator_id}: {error}")
+            df = pd.DataFrame(columns=["year", indicator_id])
+
         dfs.append(df)
 
     determinants = dfs[0]
@@ -62,9 +77,6 @@ def fetch_worldbank_determinants(country: str) -> pd.DataFrame:
         determinants = determinants.merge(df, on="year", how="outer")
 
     determinants = determinants.sort_values("year").reset_index(drop=True)
-
-    output_path = Path(f"data/processed/{country.lower()}_worldbank_determinants.csv")
-    output_path.parent.mkdir(parents=True, exist_ok=True)
     determinants.to_csv(output_path, index=False)
 
     return determinants

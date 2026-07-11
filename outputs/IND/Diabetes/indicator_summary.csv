@@ -1,0 +1,13 @@
+indicator_id,label,domain,direction,start_year,end_year,start_value,end_value,absolute_change,percent_change,interpretation
+DALYS_RATE,DALYs rate,Disease burden,lower_better,1990,2023,949.4059830962728,1710.8333695165074,761.4273864202346,80.20039898390058,increased / worsened
+DEATHS_RATE,Deaths rate,Disease burden,lower_better,1990,2023,26.559467179751454,52.64329858305354,26.08383140330209,98.20916672299818,increased / worsened
+PREVALENCE_RATE,Prevalence rate,Disease burden,lower_better,1990,2023,4429.81604876991,7693.918516026551,3264.102467256641,73.6848309573268,increased / worsened
+POP_65PLUS,Population aged 65+,Risk pressure,higher_risk,1990,2023,4.03787048090769,6.92184330138637,2.8839728204786796,71.42311359700618,increased / risk_increased
+URBAN_POP,Urban population,Risk pressure,context,1990,2023,25.5784017345035,35.0676918424186,9.489290107915096,37.09883911595109,increased / context_changed
+POVERTY_HEADCOUNT,Poverty headcount,Economic constraint,lower_better,1993,2011,45.3,21.9,-23.4,-51.65562913907284,decreased / improved
+GDP_PC,GDP per capita,Economic capability,higher_better,1990,2023,371.085936203765,2434.44826340989,2063.362327206125,556.0335560852737,increased / improved
+HEALTH_EXP_GDP,Health expenditure % GDP,Health system capacity,higher_better,2000,2023,4.10568476,3.33944035,-0.7662444100000001,-18.663011282921783,decreased / weakened
+OOP_HEALTH_EXP,Out-of-pocket health expenditure,Health system barrier,lower_better,2000,2023,71.70202637,43.88510513,-27.81692124,-38.79516751236273,decreased / improved
+SECONDARY_ENROL,Secondary school enrolment,Individual capability,higher_better,1993,2023,44.8495216369629,78.8639591218839,34.014437484921,75.84124923394472,increased / improved
+INTERNET_USERS,Internet users,Individual capability,higher_better,1990,2023,0.0,60.25230026,60.25230026,,insufficient_data
+LIBDEM,Liberal democracy index,Governance context,higher_better,1990,2023,0.54,0.273,-0.267,-49.44444444444444,decreased / weakened

@@ -1,0 +1,2 @@
+country,condition,scenario,dalys_rate_2050,absolute_reduction_vs_reference_2050,percent_reduction_vs_reference_2050,lever,improvement_idea
+IND,Diabetes,Reference,2272.336211144314,0.0,0.0,Baseline / current trajectory,Use as the comparison baseline for other improvement scenarios.

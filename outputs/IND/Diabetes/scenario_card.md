@@ -1,65 +1,105 @@
 # IND — Diabetes Scenario Card
 
-## 1. Disease burden signal
+## 1. Purpose
 
-**Diabetes DALYs rate**
+This scenario card summarises historical disease burden, IHME Foresight scenario projections, and country-level determinants for **IND + Diabetes**.
 
-1990 to 2023: 949.41 → 1710.83 (80.2%)
+The goal is not to prove causality. The goal is to support forecasting scenario thinking for prevention, health-system readiness, and investment prioritisation.
 
-This shows the long-term burden signal for diabetes. DALYs are used as the main burden measure because they combine premature mortality and non-fatal health loss.
+---
 
-## 2. Risk drivers
+## 2. Historical disease burden signal
 
-### Population ageing
+- **DALYs rate**: 949.41 in 1990 → 1710.83 in 2023 (80.2%); interpretation: `increased / worsened`
+- **Deaths rate**: 26.56 in 1990 → 52.64 in 2023 (98.2%); interpretation: `increased / worsened`
+- **Prevalence rate**: 4429.82 in 1990 → 7693.92 in 2023 (73.7%); interpretation: `increased / worsened`
 
-1990 to 2023: 4.04 → 6.92 (71.4%)
+---
 
-Ageing is a key risk driver because diabetes and its complications become more common as populations get older.
+## 3. IHME Foresight scenario summary
 
-### Urbanisation
+- **Reference**: 2025 DALYs rate = 1390.93; 2050 DALYs rate = 2272.34; 2025–2050 change = 0.6%
 
-1990 to 2023: 25.58 → 35.07 (37.1%)
+---
 
-Urbanisation is treated as a lifestyle-transition signal. It may reflect changes in diet, physical activity, work patterns, and service access.
+## 4. Scenario comparison against Reference
 
-## 3. Health system and financial protection
+- **Reference**: 2050 DALYs rate = 2272.34; reduction vs Reference = 0.00 (0.0%); lever: **Baseline / current trajectory**
 
-### Out-of-pocket health expenditure
+---
 
-2000 to 2023: 71.70 → 43.89 (-38.8%)
+## 5. Priority improvement levers
 
-Out-of-pocket expenditure is interpreted as a financial barrier to care. A lower value generally suggests improved financial protection.
+- No improvement levers available.
 
-### Health expenditure as % of GDP
+---
 
-2000 to 2023: 4.11 → 3.34 (-18.7%)
+## 6. Main scenario implication
 
-Health expenditure is interpreted as a system-capacity signal. Higher investment may improve prevention, screening, treatment, and long-term management.
+No improvement pathway could be prioritised from the available Foresight scenario data.
 
-## 4. Individual capability
+This means the scenario analysis should focus less on whether burden is rising in general, and more on which improvement pathway produces the largest projected reduction compared with the Reference trajectory.
 
-### Internet access
+---
 
-1990 to 2023: 0.00 → 60.25 (percentage change unavailable)
+## 7. Country determinant context
 
-Internet access is used as a proxy for information access and digital capability, which may support health literacy, telehealth, and prevention outreach.
+### Risk pressure
 
-## 5. Brief-facing interpretation
+- **Population aged 65+**: 4.04 in 1990 → 6.92 in 2023 (71.4%); interpretation: `increased / risk_increased`
+- **Urban population**: 25.58 in 1990 → 35.07 in 2023 (37.1%); interpretation: `increased / context_changed`
 
-This scenario card does not claim that freedom-pattern indicators directly cause diabetes burden. Instead, it uses them as contextual determinants for scenario thinking.
+### Economic capability
 
-For IND, the core scenario question is:
+- **GDP per capita**: 371.09 in 1990 → 2434.45 in 2023 (556.0%); interpretation: `increased / improved`
 
-> Is prevention and health-system capacity improving quickly enough to offset demographic and lifestyle-transition pressures?
+### Economic constraint
 
-## 6. Early scenario hypothesis
+- **Poverty headcount**: 45.30 in 1993 → 21.90 in 2011 (-51.7%); interpretation: `decreased / improved`
 
-If diabetes burden continues to rise while ageing and urbanisation also increase, IND may face a chronic-disease transition scenario where prevention, early screening, affordability, and primary-care access become increasingly important.
+### Health system capacity
 
-## 7. Suggested prevention investment angles
+- **Health expenditure % GDP**: 4.11 in 2000 → 3.34 in 2023 (-18.7%); interpretation: `decreased / weakened`
 
-- Earlier diabetes screening and risk identification
-- Primary-care based chronic disease management
-- Health literacy and digital outreach
-- Financial protection for long-term treatment
-- Urban lifestyle and prevention interventions
+### Health system barriers
+
+- **Out-of-pocket health expenditure**: 71.70 in 2000 → 43.89 in 2023 (-38.8%); interpretation: `decreased / improved`
+
+### Individual capability
+
+- **Secondary school enrolment**: 44.85 in 1993 → 78.86 in 2023 (75.8%); interpretation: `increased / improved`
+
+### Governance and civic context
+
+- **Liberal democracy index**: 0.54 in 1990 → 0.27 in 2023 (-49.4%); interpretation: `decreased / weakened`
+
+---
+
+## 8. Brief-facing interpretation
+
+This scenario card combines three types of evidence:
+
+1. **Historical GBD burden**  
+   Shows how the condition has changed over time.
+
+2. **IHME Foresight scenarios**  
+   Compares future disease burden under Reference and improvement scenarios.
+
+3. **Country determinants**  
+   Provides context for whether improvement pathways may be feasible or where investment might be needed.
+
+The key brief-facing question is:
+
+> Which improvement pathway appears most promising under IHME Foresight, and what country-level determinants may support or constrain that pathway?
+
+---
+
+## 9. Suggested use in team scenario work
+
+Use this output to support country scenario discussion:
+
+- Treat **Reference** as the baseline future trajectory.
+- Compare improvement scenarios against Reference.
+- Use the largest projected reduction to identify priority intervention levers.
+- Use country determinants to explain feasibility, constraints, and investment needs.
+- Avoid claiming direct causality between determinants and disease burden.
