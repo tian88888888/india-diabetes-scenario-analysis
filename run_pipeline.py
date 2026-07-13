@@ -60,7 +60,7 @@ def main():
         condition=condition,
     )
 
-    improvement_levers = build_improvement_levers(
+    investment_options = build_improvement_levers(
         scenario_comparison=scenario_comparison,
         country=country,
         condition=condition,
@@ -136,7 +136,7 @@ def main():
         domain_summary=domain_summary,
         forecast_summary=forecast_summary,
         scenario_comparison=scenario_comparison,
-        improvement_levers=improvement_levers,
+        investment_options=investment_options,
         country=country,
         condition=condition,
     )

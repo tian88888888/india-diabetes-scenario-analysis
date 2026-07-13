@@ -18,25 +18,47 @@ The goal is not to prove causality. The goal is to support forecasting scenario 
 
 ## 3. IHME Foresight scenario summary
 
-- **Reference**: 2025 DALYs rate = 1390.93; 2050 DALYs rate = 2272.34; 2025–2050 change = 0.6%
+- **Combined**: 2025 DALYs rate = 1202.64; 2050 DALYs rate = 521.98; 2025–2050 change = -56.6%
+- **Improved Behavioral And Metabolic Risks**: 2025 DALYs rate = 1209.15; 2050 DALYs rate = 518.06; 2025–2050 change = -57.2%
+- **Improved Childhood Nutrition And Vaccination**: 2025 DALYs rate = 1390.92; 2050 DALYs rate = 2271.72; 2025–2050 change = 63.3%
+- **Reference**: 2025 DALYs rate = 1390.93; 2050 DALYs rate = 2272.34; 2025–2050 change = 63.4%
+- **Safer Environment**: 2025 DALYs rate = 1383.27; 2050 DALYs rate = 2279.21; 2025–2050 change = 64.8%
 
 ---
 
 ## 4. Scenario comparison against Reference
 
-- **Reference**: 2050 DALYs rate = 2272.34; reduction vs Reference = 0.00 (0.0%); lever: **Baseline / current trajectory**
+- **Improved Behavioral And Metabolic Risks**: 2050 DALYs rate = 518.06; reduction vs Reference = 1754.27 (77.2%); lever: **Behavioral and metabolic risk reduction**
+- **Combined**: 2050 DALYs rate = 521.98; reduction vs Reference = 1750.35 (77.0%); lever: **Combined multi-risk improvement**
+- **Improved Childhood Nutrition And Vaccination**: 2050 DALYs rate = 2271.72; reduction vs Reference = 0.62 (0.0%); lever: **Early-life nutrition and vaccination improvement**
+- **Reference**: 2050 DALYs rate = 2272.34; reduction vs Reference = 0.00 (0.0%); lever: **Baseline trajectory**
+- **Safer Environment**: 2050 DALYs rate = 2279.21; reduction vs Reference = -6.87 (-0.3%); lever: **Environmental and living-condition improvement**
 
 ---
 
 ## 5. Priority improvement levers
 
-- No improvement levers available.
+1. **Metabolic-risk prevention and primary-care package** (High priority)
+   - Scenario evidence: **Improved Behavioral And Metabolic Risks**
+   - Main lever: Behavioral and metabolic risk reduction
+   - Estimated 2050 DALYs-rate reduction vs Reference: 1754.27 (77.2%)
+   - Rationale: This option targets the most diabetes-relevant risk pathways: obesity, diet, physical activity, blood glucose, blood pressure, and early risk detection. If this scenario produces the largest reduction, it provides strong support for prioritising prevention and primary-care management of metabolic risks.
+2. **Integrated multi-risk prevention package** (High priority)
+   - Scenario evidence: **Combined**
+   - Main lever: Combined multi-risk improvement
+   - Estimated 2050 DALYs-rate reduction vs Reference: 1750.35 (77.0%)
+   - Rationale: This option combines multiple risk-improvement pathways. It is useful as an upper-bound scenario showing what may be possible if several determinant and risk-factor areas improve together.
+3. **Early-life health foundation package** (Low priority)
+   - Scenario evidence: **Improved Childhood Nutrition And Vaccination**
+   - Main lever: Early-life nutrition and vaccination improvement
+   - Estimated 2050 DALYs-rate reduction vs Reference: 0.62 (0.0%)
+   - Rationale: This option focuses on childhood nutrition, vaccination, and early-life health conditions. For adult diabetes burden, it may be a longer-term or indirect prevention pathway unless the scenario shows a meaningful reduction.
 
 ---
 
 ## 6. Main scenario implication
 
-No improvement pathway could be prioritised from the available Foresight scenario data.
+The leading investment option is **Metabolic-risk prevention and primary-care package**, supported by the **Improved Behavioral And Metabolic Risks** Foresight scenario. This scenario shows an estimated 2050 DALYs-rate reduction of 1754.27 (77.2%) compared with the Reference trajectory.
 
 This means the scenario analysis should focus less on whether burden is rising in general, and more on which improvement pathway produces the largest projected reduction compared with the Reference trajectory.
 
@@ -95,8 +117,6 @@ The key brief-facing question is:
 ---
 
 ## 9. Suggested use in team scenario work
-
-Use this output to support country scenario discussion:
 
 - Treat **Reference** as the baseline future trajectory.
 - Compare improvement scenarios against Reference.

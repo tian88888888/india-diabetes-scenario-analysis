@@ -1,0 +1,63 @@
+Population,Location,Year,Age,Sex,Cause of death or injury,Measure,Value,Lower bound,Upper bound
+All Population,India,2025,All ages,Both,Neoplasms,DALY rank,4,,
+All Population,India,2025,All ages,Both,Neoplasms,"DALYs per 100,000",1968.4971097977275,1812.4321093984145,2164.583156913849
+All Population,India,2050,All ages,Both,Neoplasms,DALY rank,3,,
+All Population,India,2050,All ages,Both,Neoplasms,"DALYs per 100,000",3050.9279635999874,2644.7301212390066,3575.067845049847
+All Population,India,2025 - 2050,All ages,Both,Neoplasms,DALYs % change,0.5498767808267114,,
+All Population,India,2025,All ages,Both,Cardiovascular diseases,DALY rank,1,,
+All Population,India,2025,All ages,Both,Cardiovascular diseases,"DALYs per 100,000",5020.086769951173,4522.309886883993,5537.024869890148
+All Population,India,2050,All ages,Both,Cardiovascular diseases,DALY rank,1,,
+All Population,India,2050,All ages,Both,Cardiovascular diseases,"DALYs per 100,000",5017.384882288494,3511.3780627819556,7153.428429249349
+All Population,India,2025 - 2050,All ages,Both,Cardiovascular diseases,DALYs % change,-0.0005382153310280745,,
+All Population,India,2025,All ages,Both,Chronic respiratory diseases,DALY rank,2,,
+All Population,India,2025,All ages,Both,Chronic respiratory diseases,"DALYs per 100,000",2200.7051188122664,1965.255143351579,2482.2248771782183
+All Population,India,2050,All ages,Both,Chronic respiratory diseases,DALY rank,4,,
+All Population,India,2050,All ages,Both,Chronic respiratory diseases,"DALYs per 100,000",2856.158632936662,2094.7362537733443,3756.9067569097356
+All Population,India,2025 - 2050,All ages,Both,Chronic respiratory diseases,DALYs % change,0.29783795589940176,,
+All Population,India,2025,All ages,Both,Digestive diseases,DALY rank,8,,
+All Population,India,2025,All ages,Both,Digestive diseases,"DALYs per 100,000",1270.6899458141054,952.6729323562848,1579.3909900175752
+All Population,India,2050,All ages,Both,Digestive diseases,DALY rank,10,,
+All Population,India,2050,All ages,Both,Digestive diseases,"DALYs per 100,000",1516.9431922446995,1030.3368209805249,2046.9889986087244
+All Population,India,2025 - 2050,All ages,Both,Digestive diseases,DALYs % change,0.19379491215917716,,
+All Population,India,2025,All ages,Both,Neurological disorders,DALY rank,10,,
+All Population,India,2025,All ages,Both,Neurological disorders,"DALYs per 100,000",1146.626339214578,590.0505177711856,1953.0569187036904
+All Population,India,2050,All ages,Both,Neurological disorders,DALY rank,8,,
+All Population,India,2050,All ages,Both,Neurological disorders,"DALYs per 100,000",1607.6457500209265,989.0208080149698,2554.5156093742144
+All Population,India,2025 - 2050,All ages,Both,Neurological disorders,DALYs % change,0.40206595212363605,,
+All Population,India,2025,All ages,Both,Mental disorders,DALY rank,5,,
+All Population,India,2025,All ages,Both,Mental disorders,"DALYs per 100,000",1805.5763888488682,1354.4124053535634,2297.703715407964
+All Population,India,2050,All ages,Both,Mental disorders,DALY rank,6,,
+All Population,India,2050,All ages,Both,Mental disorders,"DALYs per 100,000",1968.3304869637618,1473.7800300785152,2500.3830051018367
+All Population,India,2025 - 2050,All ages,Both,Mental disorders,DALYs % change,0.09013969119227146,,
+All Population,India,2025,All ages,Both,Substance use disorders,DALY rank,12,,
+All Population,India,2025,All ages,Both,Substance use disorders,"DALYs per 100,000",286.55505626281877,223.98572557063767,351.481296896506
+All Population,India,2050,All ages,Both,Substance use disorders,DALY rank,12,,
+All Population,India,2050,All ages,Both,Substance use disorders,"DALYs per 100,000",356.876581266576,275.137933283343,436.6830147902442
+All Population,India,2025 - 2050,All ages,Both,Substance use disorders,DALYs % change,0.2454031903009266,,
+All Population,India,2025,All ages,Both,Diabetes and kidney diseases,DALY rank,7,,
+All Population,India,2025,All ages,Both,Diabetes and kidney diseases,"DALYs per 100,000",1383.266103822725,1205.3891583243478,1592.3250529648474
+All Population,India,2050,All ages,Both,Diabetes and kidney diseases,DALY rank,5,,
+All Population,India,2050,All ages,Both,Diabetes and kidney diseases,"DALYs per 100,000",2279.208702857151,1747.19179531927,2878.914093699965
+All Population,India,2025 - 2050,All ages,Both,Diabetes and kidney diseases,DALYs % change,0.6477008267306225,,
+All Population,India,2025,All ages,Both,Skin and subcutaneous diseases,DALY rank,11,,
+All Population,India,2025,All ages,Both,Skin and subcutaneous diseases,"DALYs per 100,000",480.17565219309205,323.8194431001159,682.6883836107079
+All Population,India,2050,All ages,Both,Skin and subcutaneous diseases,DALY rank,11,,
+All Population,India,2050,All ages,Both,Skin and subcutaneous diseases,"DALYs per 100,000",493.0644323608971,350.4358810468854,690.107414886835
+All Population,India,2025 - 2050,All ages,Both,Skin and subcutaneous diseases,DALYs % change,0.026841802804741393,,
+All Population,India,2025,All ages,Both,Sense organ diseases,DALY rank,9,,
+All Population,India,2025,All ages,Both,Sense organ diseases,"DALYs per 100,000",1182.7639583598655,805.2251046299724,1664.2291812870212
+All Population,India,2050,All ages,Both,Sense organ diseases,DALY rank,7,,
+All Population,India,2050,All ages,Both,Sense organ diseases,"DALYs per 100,000",1878.2610762334573,1296.8694250493493,2625.7527085586275
+All Population,India,2025 - 2050,All ages,Both,Sense organ diseases,DALYs % change,0.5880269794812104,,
+All Population,India,2025,All ages,Both,Musculoskeletal disorders,DALY rank,3,,
+All Population,India,2025,All ages,Both,Musculoskeletal disorders,"DALYs per 100,000",2032.9565417843223,1492.128988448235,2674.3999195243487
+All Population,India,2050,All ages,Both,Musculoskeletal disorders,DALY rank,2,,
+All Population,India,2050,All ages,Both,Musculoskeletal disorders,"DALYs per 100,000",3368.2893994313395,2447.671534374107,4450.016984466243
+All Population,India,2025 - 2050,All ages,Both,Musculoskeletal disorders,DALYs % change,0.656842795308845,,
+All Population,India,2025,All ages,Both,Other non-communicable diseases,DALY rank,6,,
+All Population,India,2025,All ages,Both,Other non-communicable diseases,"DALYs per 100,000",1621.8915038446364,1278.7998260316213,2086.7968399287774
+All Population,India,2050,All ages,Both,Other non-communicable diseases,DALY rank,9,,
+All Population,India,2050,All ages,Both,Other non-communicable diseases,"DALYs per 100,000",1604.168952799841,1232.4965518045599,2090.2775615488727
+All Population,India,2025 - 2050,All ages,Both,Other non-communicable diseases,DALYs % change,-0.010927087911111643,,
+
+"Institute for Health Metrics and Evaluation (IHME). GBD Foresight Data Visualization. Global Burden of Disease (GBD) Study 2019. Seattle, WA: IHME, University of Washington, 2020. Available from https://vizhub.healthdata.org/gbd-foresight/. (Accessed 7/13/2026). For terms and conditions of use, please visit http://www.healthdata.org/about/terms-and-conditions"

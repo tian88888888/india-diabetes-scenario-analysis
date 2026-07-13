@@ -1,6 +1,26 @@
 location,year,scenario,age,sex,cause,forecast_measure,value,lower,upper
+India,2025,Combined,All ages,Both,Diabetes and kidney diseases,DALY_RANK_FORECAST,8.0,,
+India,2025,Combined,All ages,Both,Diabetes and kidney diseases,DALYS_RATE_FORECAST,1202.6359647401346,1045.3279740317034,1388.3031789913305
+India,2050,Combined,All ages,Both,Diabetes and kidney diseases,DALY_RANK_FORECAST,10.0,,
+India,2050,Combined,All ages,Both,Diabetes and kidney diseases,DALYS_RATE_FORECAST,521.981886548632,394.21999579887,675.0741982054086
+India,2025 - 2050,Combined,All ages,Both,Diabetes and kidney diseases,DALYS_PERCENT_CHANGE_FORECAST,-0.5659685043084324,,
+India,2025,Improved Behavioral And Metabolic Risks,All ages,Both,Diabetes and kidney diseases,DALY_RANK_FORECAST,8.0,,
+India,2025,Improved Behavioral And Metabolic Risks,All ages,Both,Diabetes and kidney diseases,DALYS_RATE_FORECAST,1209.1515901909274,1051.4754845311918,1395.3965900448125
+India,2050,Improved Behavioral And Metabolic Risks,All ages,Both,Diabetes and kidney diseases,DALY_RANK_FORECAST,10.0,,
+India,2050,Improved Behavioral And Metabolic Risks,All ages,Both,Diabetes and kidney diseases,DALYS_RATE_FORECAST,518.0641355839656,391.3248558067948,670.3340405142031
+India,2025 - 2050,Improved Behavioral And Metabolic Risks,All ages,Both,Diabetes and kidney diseases,DALYS_PERCENT_CHANGE_FORECAST,-0.571547405811903,,
+India,2025,Improved Childhood Nutrition And Vaccination,All ages,Both,Diabetes and kidney diseases,DALY_RANK_FORECAST,7.0,,
+India,2025,Improved Childhood Nutrition And Vaccination,All ages,Both,Diabetes and kidney diseases,DALYS_RATE_FORECAST,1390.916295520661,1212.6221106894693,1600.7668254670436
+India,2050,Improved Childhood Nutrition And Vaccination,All ages,Both,Diabetes and kidney diseases,DALY_RANK_FORECAST,5.0,,
+India,2050,Improved Childhood Nutrition And Vaccination,All ages,Both,Diabetes and kidney diseases,DALYS_RATE_FORECAST,2271.716255914988,1746.393720003647,2866.0854993834387
+India,2025 - 2050,Improved Childhood Nutrition And Vaccination,All ages,Both,Diabetes and kidney diseases,DALYS_PERCENT_CHANGE_FORECAST,0.6332515933783187,,
 India,2025,Reference,All ages,Both,Diabetes and kidney diseases,DALY_RANK_FORECAST,7.0,,
 India,2025,Reference,All ages,Both,Diabetes and kidney diseases,DALYS_RATE_FORECAST,1390.9301800921398,1212.633616788556,1600.783946037604
 India,2050,Reference,All ages,Both,Diabetes and kidney diseases,DALY_RANK_FORECAST,5.0,,
 India,2050,Reference,All ages,Both,Diabetes and kidney diseases,DALYS_RATE_FORECAST,2272.336211144314,1746.9258583494154,2866.8709237721077
 India,2025 - 2050,Reference,All ages,Both,Diabetes and kidney diseases,DALYS_PERCENT_CHANGE_FORECAST,0.6336810025890637,,
+India,2025,Safer Environment,All ages,Both,Diabetes and kidney diseases,DALY_RANK_FORECAST,7.0,,
+India,2025,Safer Environment,All ages,Both,Diabetes and kidney diseases,DALYS_RATE_FORECAST,1383.266103822725,1205.3891583243478,1592.3250529648474
+India,2050,Safer Environment,All ages,Both,Diabetes and kidney diseases,DALY_RANK_FORECAST,5.0,,
+India,2050,Safer Environment,All ages,Both,Diabetes and kidney diseases,DALYS_RATE_FORECAST,2279.208702857151,1747.19179531927,2878.914093699965
+India,2025 - 2050,Safer Environment,All ages,Both,Diabetes and kidney diseases,DALYS_PERCENT_CHANGE_FORECAST,0.6477008267306225,,

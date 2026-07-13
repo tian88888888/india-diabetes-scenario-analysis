@@ -4,32 +4,68 @@ import pandas as pd
 
 SCENARIO_LEVER_MAP = {
     "Reference": {
-        "lever": "Baseline / current trajectory",
-        "idea": "Use as the comparison baseline for other improvement scenarios.",
+        "lever": "Baseline trajectory",
+        "investment_option": "Use as baseline only",
+        "investment_rationale": (
+            "The Reference scenario represents the expected future trajectory without additional "
+            "risk-factor improvement. It should be used as the comparison baseline, not as an "
+            "active investment option."
+        ),
     },
     "Safer Environment": {
-        "lever": "Environmental risk reduction",
-        "idea": "Consider environmental and living-condition interventions that reduce exposure to unsafe environments.",
+        "lever": "Environmental and living-condition improvement",
+        "investment_option": "Environmental risk and healthy living environment package",
+        "investment_rationale": (
+            "This option focuses on reducing environmental exposures and improving living conditions. "
+            "For diabetes, this is likely to be a secondary pathway unless the scenario shows a large "
+            "reduction relative to Reference."
+        ),
     },
     "Improved Behavioral and Metabolic Risks": {
         "lever": "Behavioral and metabolic risk reduction",
-        "idea": (
-            "Prioritise obesity prevention, healthy diets, physical activity, "
-            "glucose control, blood pressure control, and primary-care risk screening."
+        "investment_option": "Metabolic-risk prevention and primary-care package",
+        "investment_rationale": (
+            "This option targets the most diabetes-relevant risk pathways: obesity, diet, physical "
+            "activity, blood glucose, blood pressure, and early risk detection. If this scenario produces "
+            "the largest reduction, it provides strong support for prioritising prevention and primary-care "
+            "management of metabolic risks."
+        ),
+    },
+    "Improved Behavioral And Metabolic Risks": {
+        "lever": "Behavioral and metabolic risk reduction",
+        "investment_option": "Metabolic-risk prevention and primary-care package",
+        "investment_rationale": (
+            "This option targets the most diabetes-relevant risk pathways: obesity, diet, physical "
+            "activity, blood glucose, blood pressure, and early risk detection. If this scenario produces "
+            "the largest reduction, it provides strong support for prioritising prevention and primary-care "
+            "management of metabolic risks."
         ),
     },
     "Improved Childhood Nutrition and Vaccination": {
-        "lever": "Early-life prevention and immunisation",
-        "idea": (
-            "Strengthen childhood nutrition, vaccination, and early-life health investments "
-            "to reduce long-run disease vulnerability."
+        "lever": "Early-life nutrition and vaccination improvement",
+        "investment_option": "Early-life health foundation package",
+        "investment_rationale": (
+            "This option focuses on childhood nutrition, vaccination, and early-life health conditions. "
+            "For adult diabetes burden, it may be a longer-term or indirect prevention pathway unless "
+            "the scenario shows a meaningful reduction."
+        ),
+    },
+    "Improved Childhood Nutrition And Vaccination": {
+        "lever": "Early-life nutrition and vaccination improvement",
+        "investment_option": "Early-life health foundation package",
+        "investment_rationale": (
+            "This option focuses on childhood nutrition, vaccination, and early-life health conditions. "
+            "For adult diabetes burden, it may be a longer-term or indirect prevention pathway unless "
+            "the scenario shows a meaningful reduction."
         ),
     },
     "Combined": {
         "lever": "Combined multi-risk improvement",
-        "idea": (
-            "Coordinate interventions across environmental, behavioral, metabolic, "
-            "nutrition, and vaccination domains."
+        "investment_option": "Integrated multi-risk prevention package",
+        "investment_rationale": (
+            "This option combines multiple risk-improvement pathways. It is useful as an upper-bound "
+            "scenario showing what may be possible if several determinant and risk-factor areas improve "
+            "together."
         ),
     },
 }
@@ -87,17 +123,19 @@ def build_forecast_scenario_summary(
         if not row_2050.empty:
             dalys_2050 = row_2050.iloc[0]["value"]
 
-        if not scenario_pct.empty:
-            pct_change = scenario_pct.iloc[0]["value"]
-
+        # Always calculate percent change from 2025 and 2050 DALYs rate.
+        # This avoids ambiguity in IHME's exported "DALYs % change" values,
+        # which may be stored as proportions such as -0.56 rather than -56%.
         if (
-            (pct_change is None or pd.isna(pct_change))
-            and dalys_2025 is not None
+            dalys_2025 is not None
             and dalys_2050 is not None
             and not pd.isna(dalys_2025)
+            and not pd.isna(dalys_2050)
             and dalys_2025 != 0
         ):
             pct_change = ((dalys_2050 - dalys_2025) / dalys_2025) * 100
+        else:
+            pct_change = None
 
         rows.append(
             {
@@ -170,8 +208,12 @@ def build_scenario_comparison(
         meta = SCENARIO_LEVER_MAP.get(
             scenario,
             {
-                "lever": "Unmapped scenario lever",
-                "idea": "Add this scenario to SCENARIO_LEVER_MAP.",
+                "lever": "Unmapped scenario pathway",
+                "investment_option": "Unmapped investment option",
+                "investment_rationale": (
+                    "This scenario was not mapped to an investment option. "
+                    "Check scenario naming in SCENARIO_LEVER_MAP."
+                ),
             },
         )
 
@@ -184,7 +226,8 @@ def build_scenario_comparison(
                 "absolute_reduction_vs_reference_2050": absolute_reduction,
                 "percent_reduction_vs_reference_2050": percent_reduction,
                 "lever": meta["lever"],
-                "improvement_idea": meta["idea"],
+                "investment_option": meta["investment_option"],
+                "investment_rationale": meta["investment_rationale"],
             }
         )
 
@@ -207,26 +250,30 @@ def build_improvement_levers(
     condition: str,
 ) -> pd.DataFrame:
     """
-    Translate Foresight scenario comparison into improvement levers.
+    Translate Foresight scenario comparison into ranked investment options.
+
+    Only scenarios that reduce 2050 DALYs rate compared with Reference are kept.
     """
     output_dir = Path(f"outputs/{country}/{condition}")
     output_dir.mkdir(parents=True, exist_ok=True)
 
+    columns = [
+        "country",
+        "condition",
+        "priority_rank",
+        "scenario",
+        "lever",
+        "investment_option",
+        "estimated_reduction_vs_reference_2050",
+        "estimated_percent_reduction_vs_reference_2050",
+        "investment_rationale",
+        "investment_priority",
+    ]
+
     if scenario_comparison.empty:
-        levers = pd.DataFrame(
-            columns=[
-                "country",
-                "condition",
-                "priority_rank",
-                "scenario",
-                "lever",
-                "estimated_reduction_vs_reference_2050",
-                "estimated_percent_reduction_vs_reference_2050",
-                "improvement_idea",
-            ]
-        )
-        levers.to_csv(output_dir / "improvement_levers.csv", index=False)
-        return levers
+        investment_options = pd.DataFrame(columns=columns)
+        investment_options.to_csv(output_dir / "investment_options.csv", index=False)
+        return investment_options
 
     usable = scenario_comparison[
         scenario_comparison["scenario"] != "Reference"
@@ -236,6 +283,15 @@ def build_improvement_levers(
         usable["absolute_reduction_vs_reference_2050"].notna()
     ].copy()
 
+    usable = usable[
+        usable["absolute_reduction_vs_reference_2050"] > 0
+    ].copy()
+
+    if usable.empty:
+        investment_options = pd.DataFrame(columns=columns)
+        investment_options.to_csv(output_dir / "investment_options.csv", index=False)
+        return investment_options
+
     usable = usable.sort_values(
         by="absolute_reduction_vs_reference_2050",
         ascending=False,
@@ -244,6 +300,17 @@ def build_improvement_levers(
     rows = []
 
     for i, (_, row) in enumerate(usable.iterrows(), start=1):
+        percent_reduction = row["percent_reduction_vs_reference_2050"]
+
+        if pd.isna(percent_reduction):
+            priority = "Evidence unclear"
+        elif percent_reduction >= 10:
+            priority = "High priority"
+        elif percent_reduction >= 1:
+            priority = "Medium priority"
+        else:
+            priority = "Low priority"
+
         rows.append(
             {
                 "country": country,
@@ -251,17 +318,20 @@ def build_improvement_levers(
                 "priority_rank": i,
                 "scenario": row["scenario"],
                 "lever": row["lever"],
+                "investment_option": row["investment_option"],
                 "estimated_reduction_vs_reference_2050": row[
                     "absolute_reduction_vs_reference_2050"
                 ],
                 "estimated_percent_reduction_vs_reference_2050": row[
                     "percent_reduction_vs_reference_2050"
                 ],
-                "improvement_idea": row["improvement_idea"],
+                "investment_rationale": row["investment_rationale"],
+                "investment_priority": priority,
             }
         )
 
-    levers = pd.DataFrame(rows)
-    levers.to_csv(output_dir / "improvement_levers.csv", index=False)
+    investment_options = pd.DataFrame(rows)
 
-    return levers
+    investment_options.to_csv(output_dir / "investment_options.csv", index=False)
+
+    return investment_options

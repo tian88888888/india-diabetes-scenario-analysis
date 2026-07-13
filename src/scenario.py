@@ -80,39 +80,43 @@ def format_scenario_comparison(scenario_comparison):
     return "\n".join(lines)
 
 
-def format_improvement_levers(improvement_levers):
-    if improvement_levers is None or improvement_levers.empty:
-        return "- No improvement levers available."
+def format_investment_options(investment_options):
+    if investment_options is None or investment_options.empty:
+        return "- No investment options could be ranked from the available Foresight scenario data."
 
     lines = []
 
-    for _, row in improvement_levers.iterrows():
+    for _, row in investment_options.iterrows():
         lines.append(
-            f"{int(row['priority_rank'])}. **{row['lever']}** "
-            f"({row['scenario']}): "
-            f"{row['improvement_idea']} "
-            f"Estimated 2050 DALYs-rate reduction vs Reference: "
+            f"{int(row['priority_rank'])}. **{row['investment_option']}** "
+            f"({row['investment_priority']})\n"
+            f"   - Scenario evidence: **{row['scenario']}**\n"
+            f"   - Main lever: {row['lever']}\n"
+            f"   - Estimated 2050 DALYs-rate reduction vs Reference: "
             f"{format_value(row['estimated_reduction_vs_reference_2050'])} "
-            f"({format_percent(row['estimated_percent_reduction_vs_reference_2050'])})."
+            f"({format_percent(row['estimated_percent_reduction_vs_reference_2050'])})\n"
+            f"   - Rationale: {row['investment_rationale']}"
         )
 
     return "\n".join(lines)
 
 
-def get_top_improvement_sentence(improvement_levers):
-    if improvement_levers is None or improvement_levers.empty:
+def get_top_investment_sentence(investment_options):
+    if investment_options is None or investment_options.empty:
         return (
-            "No improvement pathway could be prioritised from the available "
+            "No investment option could be prioritised from the available "
             "Foresight scenario data."
         )
 
-    top = improvement_levers.iloc[0]
+    top = investment_options.iloc[0]
 
     return (
-        f"The strongest estimated improvement pathway is **{top['lever']}** "
-        f"under the **{top['scenario']}** scenario, with an estimated 2050 "
-        f"DALYs-rate reduction of {format_value(top['estimated_reduction_vs_reference_2050'])} "
-        f"against the Reference scenario."
+        f"The leading investment option is **{top['investment_option']}**, supported by the "
+        f"**{top['scenario']}** Foresight scenario. This scenario shows an estimated "
+        f"2050 DALYs-rate reduction of "
+        f"{format_value(top['estimated_reduction_vs_reference_2050'])} "
+        f"({format_percent(top['estimated_percent_reduction_vs_reference_2050'])}) "
+        f"compared with the Reference trajectory."
     )
 
 
@@ -122,7 +126,7 @@ def generate_scenario_card(
     domain_summary,
     forecast_summary,
     scenario_comparison,
-    improvement_levers,
+    investment_options,
     country,
     condition,
 ):
@@ -137,8 +141,8 @@ def generate_scenario_card(
 
     forecast_text = format_forecast_summary(forecast_summary)
     comparison_text = format_scenario_comparison(scenario_comparison)
-    lever_text = format_improvement_levers(improvement_levers)
-    top_improvement_sentence = get_top_improvement_sentence(improvement_levers)
+    investment_text = format_investment_options(investment_options)
+    top_investment_sentence = get_top_investment_sentence(investment_options)
 
     text = f"""# {country} — {condition} Scenario Card
 
@@ -170,13 +174,13 @@ The goal is not to prove causality. The goal is to support forecasting scenario 
 
 ## 5. Priority improvement levers
 
-{lever_text}
+{investment_text}
 
 ---
 
 ## 6. Main scenario implication
 
-{top_improvement_sentence}
+{top_investment_sentence}
 
 This means the scenario analysis should focus less on whether burden is rising in general, and more on which improvement pathway produces the largest projected reduction compared with the Reference trajectory.
 
@@ -234,8 +238,6 @@ The key brief-facing question is:
 ---
 
 ## 9. Suggested use in team scenario work
-
-Use this output to support country scenario discussion:
 
 - Treat **Reference** as the baseline future trajectory.
 - Compare improvement scenarios against Reference.

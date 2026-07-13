@@ -1,1 +1,4 @@
-
+country,condition,priority_rank,scenario,lever,estimated_reduction_vs_reference_2050,estimated_percent_reduction_vs_reference_2050,improvement_idea
+IND,Diabetes,1,Improved Behavioral And Metabolic Risks,Unmapped scenario lever,1754.2720755603482,77.20125512047021,Add this scenario to SCENARIO_LEVER_MAP.
+IND,Diabetes,2,Combined,Combined multi-risk improvement,1750.3543245956819,77.02884441181483,"Coordinate interventions across environmental, behavioral, metabolic, nutrition, and vaccination domains."
+IND,Diabetes,3,Improved Childhood Nutrition And Vaccination,Unmapped scenario lever,0.619955229326024,0.027282724549542954,Add this scenario to SCENARIO_LEVER_MAP.
